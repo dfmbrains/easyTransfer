@@ -8,12 +8,16 @@
   scroll-behavior: smooth;
 }
 
+body {
+  min-width: 1160px;
+}
+
 button {
   cursor: pointer;
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1130px;
   margin: 0 auto;
   width: 100%;
 }
@@ -316,6 +320,12 @@ button {
 }
 .footer__numbers a:hover {
   color: #2F343A;
+}
+
+@media (max-width: 576px) {
+  .page-map::after {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
