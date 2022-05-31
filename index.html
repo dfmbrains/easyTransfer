@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easy Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <a href="tel:11111">8 (800) 123-45-67</a>
+            <a href="mailto:sales@log.ru">sales@log.ru</a>
+        </div>
+    </div>
+    <div class="header__bot">
+        <div class="container">
+            <div class="header__logo">
+                <img src="./src/assets/images/logo.png" alt="">
+            </div>
+            <ul class="header__menu">
+                <li>
+                    <a href="#services">услуги</a>
+                </li>
+                <li>
+                    <a href="#company">О компании</a>
+                </li>
+                <li>
+                    <a href="#footer">контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="firstScreen">
+        <div class="firstScreen__box">
+            <h1 class="firstScreen__title">Lorem Ipsum</h1>
+            <p class="firstScreen__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam et ex
+                porro. At blanditiis consequatur delectus ipsam quod veniam!</p>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="about__box">
+                <h2 class="about__title">Lorem ipsum.</h2>
+                <p class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, minima.</p>
+                <button class="about__button">ПОДРОБНЕЕ</button>
+            </div>
+            <img class="about__img" src="./src/assets/images/car1.png" alt="">
+        </div>
+    </div>
+    <div id="services" class="services">
+        <div class="container">
+            <h2 class="services__title">услуги</h2>
+            <div class="services__row">
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+                <div class="services__card">
+                    <div class="services__card_icon">
+                        <i class="ri-taxi-fill"></i>
+                    </div>
+                    <h3 class="services__card_title">Lorem.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="company" class="company">
+        <div class="container">
+            <h2 class="company__title">О компании</h2>
+            <p class="company__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolores harum
+                hic itaque nisi nostrum provident, sunt vel. Autem debitis odit omnis placeat reiciendis vero! Alias
+                aliquam culpa cum ex ipsa mollitia officiis provident quibusdam sit tempore? Autem commodi, distinctio
+                ipsum iure labore natus nemo nisi nostrum quo quod repellendus reprehenderit sed suscipit. Asperiores
+                dignissimos illum inventore odit placeat voluptas?</p>
+        </div>
+    </div>
+    <div class="page-map">
+        <div id="map" style="width:100%; height:100%"></div>
+    </div>
+</main>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        <div>
+            <img src="./src/assets/images/logo.png" alt="">
+        </div>
+        <div>
+            <p class="footer__address">address Bishkek Kyrgyzstan</p>
+            <a class="footer__mail" href="mailto:m@m">sales@log.ru</a>
+        </div>
+        <div class="footer__numbers">
+            <a href="tel:111111">+996777777777</a>
+            <a href="tel:111111">+996777777777</a>
+        </div>
+    </div>
+</footer>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [42.878197, 74.612808],
+            zoom: 17
+        });
+        DG.marker([42.878197, 74.612808]).addTo(map)
+    });
+</script>
+</body>
+</html>
