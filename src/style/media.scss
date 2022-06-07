@@ -84,7 +84,6 @@
     }
 
     &__button {
-      display: block;
       margin: 0 auto;
       padding: 12px 35px 13px;
       font-size: 14px;
@@ -105,6 +104,18 @@
     }
   }
   .company {
+    &__type {
+      h3 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 15px;
+      }
+      li {
+        font-size: 14px;
+      }
+    }
+
     &__title {
       font-size: 36px;
       margin: 0 0 30px;
@@ -147,12 +158,14 @@
     &__logo {
       display: flex;
       align-items: center;
-      width: 110px;
+      width: 90px;
     }
 
     &__menu {
+      column-gap: 10px;
+
       a {
-        font-size: 12px;
+        font-size: 11px;
         column-gap: 10px;
       }
     }
@@ -249,5 +262,22 @@
 @media (max-width: 460px) {
   .container {
     padding: 0 10px;
+  }
+  .page-map {
+    height: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    &__logo {
+      width: 70px;
+    }
+
+    &__menu {
+      a {
+        font-size: 10px;
+      }
+    }
   }
 }

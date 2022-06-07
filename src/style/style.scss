@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 
-button {
+a, button {
   cursor: pointer;
 }
 
@@ -30,6 +30,12 @@ button {
   &__top {
     background: #C8A35F;
     padding: 16px 0;
+
+    &_numbers {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
 
     a {
       font-weight: 400;
@@ -64,6 +70,14 @@ button {
       &:hover {
         color: #C8A35F;
       }
+    }
+  }
+
+  &__logo {
+    width: 160px;
+
+    img {
+      width: 100%;
     }
   }
 }
@@ -152,28 +166,45 @@ button {
   &__subtitle {
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 140%;
     color: #FFFFFF;
-    margin: 30px 0 50px;
+
+    &_first {
+      margin: 30px 0 10px;
+    }
+
+    &_second {
+      margin: 0 0 50px;
+    }
   }
 
   &__button {
     background: #C8A35F;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FFFFFF;
     padding: 15px 50px 16px;
     border: 1px solid transparent;
     transition: 0.3s;
+    display: inline-block;
+
+    a {
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transition: 0.3s;
+    }
 
     &:hover {
-      color: #C8A35F;
       border: 1px solid #C8A35F;
       background: transparent;
       transition: 0.3s;
+
+      a {
+        color: #C8A35F;
+        transition: 0.3s;
+      }
     }
   }
 
@@ -195,7 +226,6 @@ button {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 0 60px;
     position: relative;
 
     &::before {
@@ -206,6 +236,14 @@ button {
       height: 6px;
       background: #C8A35F;
     }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 20px 0 60px;
   }
 
   &__row {
@@ -269,6 +307,55 @@ button {
 .company {
   background: #2F343A;
   padding: 50px 0 120px;
+
+  &__type {
+    margin: 80px 0 0;
+    padding: 40px 0 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      z-index: 5;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: white;
+      width: 100%;
+      height: 0.5px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin: 0 0 15px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #FFFFFF;
+      margin: 0 0 15px;
+    }
+
+    ul {
+      padding: 0 0 0 3%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+      }
+    }
+  }
 
   &__title {
     font-weight: 700;

@@ -68,7 +68,6 @@
     width: 70%;
   }
   .about__button {
-    display: block;
     margin: 0 auto;
     padding: 12px 35px 13px;
     font-size: 14px;
@@ -85,6 +84,15 @@
     font-size: 17px;
   }
 
+  .company__type h3 {
+    font-size: 17px;
+  }
+  .company__type p {
+    font-size: 15px;
+  }
+  .company__type li {
+    font-size: 14px;
+  }
   .company__title {
     font-size: 36px;
     margin: 0 0 30px;
@@ -122,10 +130,13 @@
   .header__logo {
     display: flex;
     align-items: center;
-    width: 110px;
+    width: 90px;
+  }
+  .header__menu {
+    column-gap: 10px;
   }
   .header__menu a {
-    font-size: 12px;
+    font-size: 11px;
     column-gap: 10px;
   }
 
@@ -207,6 +218,18 @@
 @media (max-width: 460px) {
   .container {
     padding: 0 10px;
+  }
+
+  .page-map {
+    height: 200px;
+  }
+}
+@media (max-width: 425px) {
+  .header__logo {
+    width: 70px;
+  }
+  .header__menu a {
+    font-size: 10px;
   }
 }
 
